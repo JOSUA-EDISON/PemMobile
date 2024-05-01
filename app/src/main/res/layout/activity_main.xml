@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextNIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIK"
+            android:inputType="number"
+            android:maxLength="16" />
+
+        <EditText
+            android:id="@+id/editTextNamaLengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap" />
+
+        <EditText
+            android:id="@+id/etTanggalLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@id/editTextAlamat"
+            android:hint="Pilih Tanggal Lahir"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/editTextTempatLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempat Lahir" />
+
+        <EditText
+            android:id="@+id/editTextAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usia" />
+
+        <EditText
+            android:id="@+id/textViewUsia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usia" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <Spinner
+            android:id="@+id/spinnerJenisKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/jenis_kelamin" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupKewarganegaraan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonWNI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WNI" />
+
+            <RadioButton
+                android:id="@+id/radioButtonWNA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WNA" />
+
+        </RadioGroup>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bidang Kompetensi" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBoxDevelopment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Development &amp; IT" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AI Services" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDesign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Design Creative" />
+
+            <CheckBox
+                android:id="@+id/checkBoxWriting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Writing" />
+
+            <CheckBox
+                android:id="@+id/checkBoxFinance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finance &amp; Accounting" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_marginEnd="16dp"/>
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
